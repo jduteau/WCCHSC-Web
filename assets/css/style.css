@@ -636,7 +636,7 @@ font-size: 20px !important;
   height: 100vh;
   background: url("/assets/img/cropped.webp") top center;
   background-size: cover;
-  overflow: hidden;
+  overflow: auto;
   position: relative;
 }
 
@@ -789,7 +789,7 @@ font-size: 20px !important;
   height: 45vh;
   background: url("/assets/img/papersteadfast8.webp") ;
   background-position: center;
-  overflow: hidden;
+  overflow: auto;
   position: relative;
   background-size: 100% 100%;
 }
