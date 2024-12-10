@@ -212,8 +212,8 @@ function resetEntry0(){
     var basic_total=parseInt(document.getElementById("tbasic").value)*150+parseInt(document.getElementById("tadd").value)*40+parseInt(document.getElementById("radd").value)*25;
     
     if(document.getElementById("meals0").style.display=="block"){
-      fri_total=parseInt(document.getElementById("fri_b").value)*12+parseInt(document.getElementById("fri_l").value)*18+parseInt(document.getElementById("fri_d").value)*18;
-      sat_total=parseInt(document.getElementById("sat_b").value)*12+parseInt(document.getElementById("sat_l").value)*18;
+      fri_total=parseInt(document.getElementById("fri_b").value)*12+parseInt(document.getElementById("fri_l").value)*19+parseInt(document.getElementById("fri_d").value)*20;
+      sat_total=parseInt(document.getElementById("sat_b").value)*12+parseInt(document.getElementById("sat_l").value)*19;
       temp=basic_total+fri_total+sat_total; 
     }else{
       temp=basic_total;
@@ -649,8 +649,8 @@ function resetEntry4(){
    
     if(document.getElementById("meals4").style.display=="block"){
 
-      fri_total=parseInt(document.getElementById("fri_b4").value)*12+parseInt(document.getElementById("fri_l4").value)*18+parseInt(document.getElementById("fri_d4").value)*18;
-      sat_total=parseInt(document.getElementById("sat_b4").value)*12+parseInt(document.getElementById("sat_l4").value)*18;
+      fri_total=parseInt(document.getElementById("fri_b4").value)*12+parseInt(document.getElementById("fri_l4").value)*19+parseInt(document.getElementById("fri_d4").value)*20;
+      sat_total=parseInt(document.getElementById("sat_b4").value)*12+parseInt(document.getElementById("sat_l4").value)*19;
       temp=basic_total+fri_total+sat_total; 
 
     }else{
