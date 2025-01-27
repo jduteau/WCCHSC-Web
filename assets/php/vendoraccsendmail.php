@@ -12,6 +12,7 @@ require 'PHPMailer/src/Exception.php';
 
 
 $name = $_POST['name1'];
+$assistantname = $_POST['assistantname1'];
 $company= $_POST['company1'];
 $email= $_POST['email1'];
 $contactno= $_POST['contactno1'];
@@ -45,7 +46,7 @@ $foodNote4= $_POST['foodNote4'];
 
 $total= $_POST['gtotal1'];
 
-$message =nl2br("<b><u> Vendor's Details : </u></b>\r\n\r\n<b><u> Basic Details : </u></b>\r\n Name : ". $name . "\r\n Company name : " . $company . "\r\n Email : " . $email . "\r\n Contact no. : " . $contactno . "\r\n Electrical access required : " . $check3 . "\r\n Wall preferred : " . $check4 . "\r\n\r\n<b><u> Counter's Details : </u></b>\r\n Basic (1 table/2 reps) - Early : " . $basicQty . "\r\n Additional Table - Early : " . $additionalQty . "\r\n Additional Rep - Early : " . $repQty . "\r\n\r\n<b><u> Accommodation Detail : </u></b>\r\n Accommodation charge : " . $accTotal . "\r\n\r\n<b><u> Meals Detail : </u></b>\r\n Friday breakfast : " . $friBkft . "\r\n Friday lunch : " . $friLnh . "\r\n Friday supper : " . $friDnr . "\r\n Saturday breakfast : " . $satBkft . "\r\n Saturday lunch : " . $satLnh . "\r\n Special meal instruction : " . $foodNote4 . "\r\n\r\n <b>Total : " . $total . "</b>", false);
+$message =nl2br("<b><u> Vendor's Details : </u></b>\r\n\r\n<b><u> Basic Details : </u></b>\r\n Name : ". $name . "\r\n Assistant name : " . $assistantname . "\r\n Company name : " . $company . "\r\n Email : " . $email . "\r\n Contact no. : " . $contactno . "\r\n Electrical access required : " . $check3 . "\r\n Wall preferred : " . $check4 . "\r\n\r\n<b><u> Counter's Details : </u></b>\r\n Basic (1 table/2 reps) - Early : " . $basicQty . "\r\n Additional Table - Early : " . $additionalQty . "\r\n Additional Rep - Early : " . $repQty . "\r\n\r\n<b><u> Accommodation Detail : </u></b>\r\n Accommodation charge : " . $accTotal . "\r\n\r\n<b><u> Meals Detail : </u></b>\r\n Friday breakfast : " . $friBkft . "\r\n Friday lunch : " . $friLnh . "\r\n Friday supper : " . $friDnr . "\r\n Saturday breakfast : " . $satBkft . "\r\n Saturday lunch : " . $satLnh . "\r\n Special meal instruction : " . $foodNote4 . "\r\n\r\n <b>Total : " . $total . "</b>", false);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 

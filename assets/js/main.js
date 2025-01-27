@@ -589,36 +589,9 @@ document.getElementById("No._of_participants").addEventListener("keypress", func
     //Error icon
     let errorIcon1=document.getElementById("error-icon1");
     let errorIcon2=document.getElementById("error-icon2");
+    let errorIcon3=document.getElementById("error-icon3");
 
-    //For name field
-    var noOfParticipant=document.getElementById("No._of_participants").value;
-    const name=[];
-    const error=[];
-    var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
-  
-    for(var i=0;i<noOfParticipant;i++)
-    {
-      var temp="name"+i;
-      var errorTemp="error-icon0"+i;
-
-      name[i]= document.getElementById(temp);
-      error[i]= document.getElementById(errorTemp);
-
-      if(!regName.test(name[i].value)){
-        
-      // alert('Please enter your full name (first & last name).');
-        name[i].classList.add("error");
-        error[i].style.display="block";
-        
-        var part=i+1;
-        errormsg=errormsg+"\n"+"• Please enter full name of Participant"+part;
-        errorCount++;     
-      }else{
-        name[i].classList.remove("error"); 
-        error[i].style.display="none";
-      }
-    }
-    
+   
     //For email field
     let email=document.getElementById("email");
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -649,6 +622,23 @@ document.getElementById("No._of_participants").addEventListener("keypress", func
       errorIcon2.style.display="none";
     }
   
+      //For contact number
+      let contactno=document.getElementById("contactno");
+      var contactnoformat = /^\d{10}$/;
+    
+      if(!contactno.value.match(contactnoformat))
+      {            
+                contactno.classList.add("error");
+                errormsg=errormsg+"\n"+"• Please enter the contact number";
+                errorCount++;
+                errorIcon3.style.display="block";
+                
+      }else{
+        contactno.classList.remove("error"); 
+        errorIcon3.style.display="none";
+      }
+    
+    
     //For registration
     let single=document.getElementById("tbasic11");
     let married=document.getElementById("cadd1");
@@ -702,10 +692,12 @@ document.getElementById("No._of_participants").addEventListener("keypress", func
   
     document.getElementById("email").classList.remove("error");
     document.getElementById("city").classList.remove("error");
+    document.getElementById("contactno").classList.remove("error");
     document.getElementById("modal-content1").classList.remove("error");
 
     document.getElementById("error-icon1").style.display="none";
     document.getElementById("error-icon2").style.display="none";
+    document.getElementById("error-icon3").style.display="none";
 
     document.getElementById('errorContainer').style.display="none";
     document.getElementById('registrationForm').classList.remove("fadeBackground");
@@ -751,6 +743,20 @@ document.getElementById("No._of_participants").addEventListener("keypress", func
   document.getElementById("city").addEventListener("propertychange", function(event){
 
     document.getElementById("error-icon2").style.display="none";
+    event.target.classList.remove("error");    
+
+  });
+
+  document.getElementById("contactno").addEventListener("input", function(event){
+
+    document.getElementById("error-icon3").style.display="none";
+    event.target.classList.remove("error");    
+
+  });
+
+  document.getElementById("contactno").addEventListener("propertychange", function(event){
+
+    document.getElementById("error-icon3").style.display="none";
     event.target.classList.remove("error");    
 
   });
@@ -1079,38 +1085,10 @@ document.getElementById("No._of_participants").addEventListener("keypress", func
     let errormsg="";
   
     //Error icon
-    let errorIcon3=document.getElementById("error-icon3");
     let errorIcon4=document.getElementById("error-icon4");
     let errorIcon5=document.getElementById("error-icon5");
+    let errorIcon6=document.getElementById("error-icon6");
 
-    //For name field
-    var noOfParticipant=document.getElementById("No._of_participants1").value;
-    const name=[];
-    const error=[];
-    var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
-  
-    for(var i=0;i<noOfParticipant;i++)
-    {
-      var temp="name"+i;
-      var errorTemp="error-icon00"+i;
-
-      name[i]= document.getElementById(temp);
-      error[i]= document.getElementById(errorTemp);
-      
-      if(!regName.test(name[i].value)){
-      // alert('Please enter your full name (first & last name).');
-        name[i].classList.add("error");
-        error[i].style.display="block";
-
-        var part=i+1;
-        errormsg=errormsg+"\n"+"• Please enter full name of Participant"+part;
-        errorCount++;     
-      }else{
-        name[i].classList.remove("error"); 
-        error[i].style.display="none";
-      }
-    }
-    
     //For email field
     let email=document.getElementById("email2");
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -1119,13 +1097,29 @@ document.getElementById("No._of_participants").addEventListener("keypress", func
     {
               email.classList.add("error");
               errormsg=errormsg+"\n"+"• Please enter your email";
-              errorIcon3.style.display="block";
+              errorIcon4.style.display="block";
               errorCount++;
     }else{
       email.classList.remove("error");  
-      errorIcon3.style.display="none";
+      errorIcon4.style.display="none";
     }
     
+      //For contact number
+      let contactno=document.getElementById("contactno2");
+      var contactnoformat = /^\d{10}$/;
+    
+      if(!contactno.value.match(contactnoformat))
+      {            
+                contactno.classList.add("error");
+                errormsg=errormsg+"\n"+"• Please enter the contact number";
+                errorCount++;
+                errorIcon6.style.display="block";
+                
+      }else{
+        contactno.classList.remove("error"); 
+        errorIcon6.style.display="none";
+      }
+
     //For city
     let city=document.getElementById("city2");
     var cityformat = /^[a-zA-Z ]+$/;
@@ -1134,14 +1128,14 @@ document.getElementById("No._of_participants").addEventListener("keypress", func
     {            
               city.classList.add("error");
               errormsg=errormsg+"\n"+"• Please enter your city";
-              errorIcon4.style.display="block";
+              errorIcon5.style.display="block";
               errorCount++;
     }else{
       city.classList.remove("error"); 
-      errorIcon4.style.display="none";
+      errorIcon5.style.display="none";
     }
   
-    //For registration
+      //For registration
     let single=document.getElementById("tbasic1");
     let married=document.getElementById("cadd");
     let youth=document.getElementById("cyadd");
@@ -1211,13 +1205,14 @@ document.getElementById("No._of_participants").addEventListener("keypress", func
     document.getElementById('formBtnLayout1').style.display = 'none';     
 
     document.getElementById("email2").classList.remove("error");
+    document.getElementById("contactno2").classList.remove("error");
     document.getElementById("city2").classList.remove("error");
     document.getElementById("accTotal").classList.remove("error");
     document.getElementById("modal-content2").classList.remove("error");
 
-    document.getElementById("error-icon3").style.display="none";
     document.getElementById("error-icon4").style.display="none";
     document.getElementById("error-icon5").style.display="none";
+    document.getElementById("error-icon6").style.display="none";
 
     document.getElementById('errorContainer2').style.display="none";
     document.getElementById('registrationAccForm').classList.remove("fadeBackground");
@@ -1239,32 +1234,45 @@ document.getElementById("No._of_participants").addEventListener("keypress", func
   
   document.getElementById("email2").addEventListener("input", function(event){
 
-    document.getElementById("error-icon3").style.display="none";
+    document.getElementById("error-icon4").style.display="none";
     event.target.classList.remove("error");    
 
   });
 
   document.getElementById("email2").addEventListener("propertychange", function(event){
 
-    document.getElementById("error-icon3").style.display="none";
+    document.getElementById("error-icon4").style.display="none";
     event.target.classList.remove("error");    
 
   });
 
   document.getElementById("city2").addEventListener("input", function(event){
 
-    document.getElementById("error-icon4").style.display="none";
+    document.getElementById("error-icon5").style.display="none";
     event.target.classList.remove("error");    
 
   });
 
   document.getElementById("city2").addEventListener("propertychange", function(event){
 
-    document.getElementById("error-icon4").style.display="none";
+    document.getElementById("error-icon5").style.display="none";
     event.target.classList.remove("error");    
 
   });
 
+  document.getElementById("contactno2").addEventListener("input", function(event){
+
+    document.getElementById("error-icon6").style.display="none";
+    event.target.classList.remove("error");    
+
+  });
+
+  document.getElementById("contactno2").addEventListener("propertychange", function(event){
+
+    document.getElementById("error-icon6").style.display="none";
+    event.target.classList.remove("error");    
+
+  });
 
   document.getElementById("accTotal").addEventListener("input", function(event){
 

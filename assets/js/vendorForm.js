@@ -234,40 +234,9 @@ function resetEntry0(){
     let errormsg3="";
 
     //Error icon
-    let errorIcon1=document.getElementById("error-icon1");
-    let errorIcon2=document.getElementById("error-icon2");
     let errorIcon3=document.getElementById("error-icon3");
     let errorIcon4=document.getElementById("error-icon4");
     
-    //For name field
-    let name3=document.getElementById("fullname");
-    var regName3 = /^[a-zA-Z]+ [a-zA-Z]+$/;
-  
-    if(!name3.value.match(regName3))
-    {
-              name3.classList.add("error");              
-              errormsg3=errormsg3+"\n"+"• Please enter your full name";
-              errorIcon1.style.display="block";
-              errorCount3++;
-    }else{
-      name3.classList.remove("error"); 
-      errorIcon1.style.display="none";
-    }
-  
-    //For company
-    let company=document.getElementById("company");
-    var companyformat = /^[a-zA-Z ]+$/;
-  
-    if(!company.value.match(companyformat))
-    {            
-              company.classList.add("error");
-              errormsg3=errormsg3+"\n"+"• Please enter your company name";
-              errorCount3++;
-              errorIcon2.style.display="block";
-    }else{
-      company.classList.remove("error"); 
-      errorIcon2.style.display="none";
-    }
   
     //For email
     let email3=document.getElementById("email3");
@@ -685,52 +654,11 @@ function resetEntry4(){
 
     //Error icon
 
-    let errorIcon5=document.getElementById("error-icon5");
-    let errorIcon6=document.getElementById("error-icon6");
     let errorIcon7=document.getElementById("error-icon7");
     let errorIcon8=document.getElementById("error-icon8");    
     let errorIcon9=document.getElementById("error-icon9");    
 
-    //For name field
-
-    let name3=document.getElementById("fullname1");
-    var regName3 = /^[a-zA-Z]+ [a-zA-Z]+$/;
- 
-    if(!name3.value.match(regName3))
-    {
-
-              name3.classList.add("error");              
-              errormsg3=errormsg3+"\n"+"• Please enter your full name";
-              errorIcon5.style.display="block";
-              errorCount4++;
-    }else{
-
-      name3.classList.remove("error"); 
-      errorIcon5.style.display="none";
-
-    }  
-
-    //For company
-
-    let company=document.getElementById("company1");
-    var companyformat = /^[a-zA-Z ]+$/;
- 
-    if(!company.value.match(companyformat))
-    {            
-
-              company.classList.add("error");
-              errormsg3=errormsg3+"\n"+"• Please enter your company name";
-              errorCount4++;
-              errorIcon6.style.display="block";
-
-    }else{
-
-      company.classList.remove("error"); 
-      errorIcon6.style.display="none";
-
-    }
-
-    //For email
+     //For email
 
     let email3=document.getElementById("email4");
     var mailformat3 = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;

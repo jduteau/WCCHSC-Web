@@ -18,6 +18,7 @@ $count=1;
                
 $No_of_participants = $_POST['No_of_participants1'];
 $email= $_POST['email2'];
+$contactno= $_POST['contactno2'];
 $city= $_POST['city2'];
                 
 $single= $_POST['single'];
@@ -46,6 +47,8 @@ foreach ($stringArray as $string) {
 }
 
 $message .=" Email : " . $email;
+$message .= "<br>";
+$message .=" Contact No : " . $contactno;
 $message .= "<br>";
 $message .= " City : " . $city;
 $message .= "<br><br>";
