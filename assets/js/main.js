@@ -563,8 +563,8 @@ document.getElementById("No._of_participants").addEventListener("keypress", func
   
     var basic_total1=parseInt(document.getElementById("tbasic11").value)*120+parseInt(document.getElementById("cadd1").value)*160+parseInt(document.getElementById("cyadd1").value)*50;
     if(document.getElementById("meals").style.display=="block"){
-      fri_total=parseInt(document.getElementById("fri_b").value)*12+parseInt(document.getElementById("fri_l").value)*19+parseInt(document.getElementById("fri_d").value)*20;
-      sat_total=parseInt(document.getElementById("sat_b").value)*12+parseInt(document.getElementById("sat_l").value)*19;
+      fri_total=parseInt(document.getElementById("fri_b").value)*14+parseInt(document.getElementById("fri_l").value)*21+parseInt(document.getElementById("fri_d").value)*22;
+      sat_total=parseInt(document.getElementById("sat_b").value)*14+parseInt(document.getElementById("sat_l").value)*21;
       temp=fri_total+sat_total+basic_total1;
      
     }else{
@@ -1046,8 +1046,8 @@ document.getElementById("No._of_participants").addEventListener("keypress", func
   
       var basic_total=parseInt(document.getElementById("tbasic1").value)*120+parseInt(document.getElementById("cadd").value)*160+parseInt(document.getElementById("cyadd").value)*50;
       if(document.getElementById("meals1").style.display=="block"){
-        fri_total=parseInt(document.getElementById("fri_b1").value)*12+parseInt(document.getElementById("fri_l1").value)*19+parseInt(document.getElementById("fri_d1").value)*20;
-        sat_total=parseInt(document.getElementById("sat_b1").value)*12+parseInt(document.getElementById("sat_l1").value)*19;
+        fri_total=parseInt(document.getElementById("fri_b1").value)*14+parseInt(document.getElementById("fri_l1").value)*21+parseInt(document.getElementById("fri_d1").value)*22;
+        sat_total=parseInt(document.getElementById("sat_b1").value)*14+parseInt(document.getElementById("sat_l1").value)*21;
         temp=basic_total+fri_total+sat_total;
        
       }else{
