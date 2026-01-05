@@ -561,7 +561,7 @@ document.getElementById("No._of_participants").addEventListener("keypress", func
     var sat_total=0;
     var temp;
   
-    var basic_total1=parseInt(document.getElementById("tbasic11").value)*120+parseInt(document.getElementById("cadd1").value)*160+parseInt(document.getElementById("cyadd1").value)*50;
+    var basic_total1=parseInt(document.getElementById("tbasic11").value)*100+parseInt(document.getElementById("cadd1").value)*140+parseInt(document.getElementById("cyadd1").value)*50;
     if(document.getElementById("meals").style.display=="block"){
       fri_total=parseInt(document.getElementById("fri_b").value)*14+parseInt(document.getElementById("fri_l").value)*21+parseInt(document.getElementById("fri_d").value)*22;
       sat_total=parseInt(document.getElementById("sat_b").value)*14+parseInt(document.getElementById("sat_l").value)*21;
@@ -1044,7 +1044,7 @@ document.getElementById("No._of_participants").addEventListener("keypress", func
       var sat_total=0;
       var temp;
   
-      var basic_total=parseInt(document.getElementById("tbasic1").value)*120+parseInt(document.getElementById("cadd").value)*160+parseInt(document.getElementById("cyadd").value)*50;
+      var basic_total=parseInt(document.getElementById("tbasic1").value)*100+parseInt(document.getElementById("cadd").value)*140+parseInt(document.getElementById("cyadd").value)*50;
       if(document.getElementById("meals1").style.display=="block"){
         fri_total=parseInt(document.getElementById("fri_b1").value)*14+parseInt(document.getElementById("fri_l1").value)*21+parseInt(document.getElementById("fri_d1").value)*22;
         sat_total=parseInt(document.getElementById("sat_b1").value)*14+parseInt(document.getElementById("sat_l1").value)*21;
