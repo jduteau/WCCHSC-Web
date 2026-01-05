@@ -63,6 +63,7 @@ try {
 
     $phpmailer->AddReplyTo($email, $email);
     $phpmailer->addAddress('wcchscvendors@gmail.com'); // Recipient's email
+    $phpmailer->addAddress($email);
 
     // Content
 

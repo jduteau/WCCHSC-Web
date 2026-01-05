@@ -87,6 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         //Recipients
         $phpmailer->AddReplyTo($email, $email);
         $phpmailer->addAddress('wcchscreg@gmail.com');
+        $phpmailer->addAddress($email);
 
         // Recipient's email
 
