@@ -76,7 +76,7 @@ $message .= " Saturday lunch : " . $satLnh;
 $message .= "<br>";
 $message .= " Special meal instruction : " . $foodNote2;
 $message .= "<br><br>";
-$message .= " <b>Total : " . $total . "</b>";
+$message .= " <b>Total due - Please Remit ASAP : " . $total . "</b>";
                 
              
 
