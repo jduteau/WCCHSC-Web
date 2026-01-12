@@ -1,0 +1,33 @@
+name: Deploy Files
+
+on:
+  push:
+    branches:
+      - master
+  # Enables manually triggering of Workflow with file synchronization option
+  workflow_dispatch:
+    inputs:
+      sync:
+        description: "File synchronization"
+        required: true
+        default: "delta"
+
+jobs:
+  deploy-master:
+    name: "master branch"
+    if: ${{ github.ref == 'refs/heads/master' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: "Deploy"
+        uses: milanmk/actions-file-deployer@master
+        with:
+          remote-protocol: "sftp"
+          remote-host: "ssh.nyc1.nearlyfreespeech.net"
+          remote-user: "jduteau_wcchsc"
+          ssh-private-key: ${{ secrets.DEPLOY_PRIVATE_KEY }}
+          remote-path: "/home/public"
