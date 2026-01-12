@@ -30,4 +30,4 @@ jobs:
           remote-host: "ssh.nyc1.nearlyfreespeech.net"
           remote-user: "jduteau_wcchsc"
           ssh-private-key: ${{ secrets.NFS_SFTP_PGP_KEY }}
-          remote-path: "/home/public"
+          debug: true
