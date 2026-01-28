@@ -591,6 +591,17 @@ document.getElementById("No._of_participants").addEventListener("keypress", func
     let errorIcon2=document.getElementById("error-icon2");
     let errorIcon3=document.getElementById("error-icon3");
 
+    // For participant name fields
+    let noOfParticipant=document.getElementById("No._of_participants").value;
+    for(var i=0;i<noOfParticipant;i++) {
+      let pname=document.getElementById("name"+i);
+      if(pname.value.trim()==="") {
+        pname.classList.add("error");
+        errormsg=errormsg+"\n"+"• Please enter name for Participant #"+(i+1);
+        document.getElementById("error-icon0"+i).style.display="block";
+        errorCount++;
+      }
+    }
    
     //For email field
     let email=document.getElementById("email");
@@ -1088,6 +1099,19 @@ document.getElementById("No._of_participants").addEventListener("keypress", func
     let errorIcon4=document.getElementById("error-icon4");
     let errorIcon5=document.getElementById("error-icon5");
     let errorIcon6=document.getElementById("error-icon6");
+
+    // For participant name fields
+    let noOfParticipant=document.getElementById("No._of_participants1").value;
+    for(var i=0;i<noOfParticipant;i++) {
+      let pname=document.getElementById("name"+i);
+      if(pname.value.trim()==="") {
+        pname.classList.add("error");
+        errormsg=errormsg+"\n"+"• Please enter name for Participant #"+(i+1);
+        document.getElementById("error-icon00"+i).style.display="block";
+        errorCount++;
+      }
+    }
+   
 
     //For email field
     let email=document.getElementById("email2");
