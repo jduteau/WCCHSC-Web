@@ -76,7 +76,7 @@ $message .= " Saturday lunch : " . $satLnh;
 $message .= "<br>";
 $message .= " Special meal instruction : " . $foodNote2;
 $message .= "<br><br>";
-$message .= " <b>Total due - Please Remit ASAP : " . $total . "</b>";
+$message .= " <b>Total due - Please Remit within 24 hours : " . $total . "</b>";
                 
              
 
@@ -111,3 +111,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 
 }
 ?>
+
