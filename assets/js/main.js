@@ -561,7 +561,7 @@ document.getElementById("No._of_participants").addEventListener("keypress", func
     var sat_total=0;
     var temp;
   
-    var basic_total1=parseInt(document.getElementById("tbasic11").value)*120+parseInt(document.getElementById("cadd1").value)*16\0+parseInt(document.getElementById("cyadd1").value)*50;
+    var basic_total1=parseInt(document.getElementById("tbasic11").value)*120+parseInt(document.getElementById("cadd1").value)*160+parseInt(document.getElementById("cyadd1").value)*50;
     if(document.getElementById("meals").style.display=="block"){
       fri_total=parseInt(document.getElementById("fri_b").value)*14+parseInt(document.getElementById("fri_l").value)*21+parseInt(document.getElementById("fri_d").value)*22;
       sat_total=parseInt(document.getElementById("sat_b").value)*14+parseInt(document.getElementById("sat_l").value)*21;
