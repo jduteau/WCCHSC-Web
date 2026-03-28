@@ -634,8 +634,8 @@ font-size: 20px !important;
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("/assets/img/cropped.webp") top center;
-  background-size: cover;
+  background: url("/assets/img/WCCHSC.jpg") top center;
+  background-size: auto;
   overflow: auto;
   position: relative;
 }
@@ -787,7 +787,7 @@ font-size: 20px !important;
 #hero2 {
   width: 100%;
   height: 45vh;
-  background: url("/assets/img/papersteadfast8.webp") ;
+  background: url("/assets/img/paper.png") ;
   background-position: center;
   overflow: auto;
   position: relative;
@@ -806,7 +806,7 @@ font-size: 20px !important;
   #hero2 {
     width: 100%;
     height: 50vh;
-    background: url("/assets/img/papersteadfast9.webp") ;
+    background: url("/assets/img/paper.png") ;
     background-position: center;
     background-size: 100% 100%;
     overflow: hidden;
@@ -916,7 +916,7 @@ font-size: 20px !important;
 # About Section
 --------------------------------------------------------------*/
 #about {
-  background: url("/assets/img/papersteadfast3.png");
+  background: url("/assets/img/paper.png");
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -937,7 +937,7 @@ font-size: 20px !important;
   #about{
     width: 100%;
     height: fit-content;
-    background: url("/assets/img/papersteadfast9.png") ;
+    background: url("/assets/img/paper.png") ;
     background-position: center;
     background-size: 100% 100%;
     overflow: hidden;
@@ -1160,7 +1160,7 @@ font-size: 20px !important;
 }
 
 #venue .venue-info {
-  background: url("../img/paper-4.JPG") top center no-repeat;
+  background: url("/assets/img/paper.png") top center no-repeat;
   background-size: cover;
   position: relative;
   height: 100%;
@@ -1607,7 +1607,7 @@ and (max-width : 770px) {
 --------------------------------------------------------------*/
 #subscribe {
   padding: 60px;
-  background: url(/assets/img/M&C_halfcrop.jpeg) center center no-repeat;
+  background: url(/assets/img/cropped.jpeg) center center no-repeat;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -1767,7 +1767,7 @@ and (max-width : 770px) {
 --------------------------------------------------------------*/
 #contactus {
   padding: 60px;
-  background: url(/assets/img/paper-4.JPG) center center no-repeat;
+  background: url(/assets/img/paper.png) center center no-repeat;
   background-size: cover;
   overflow: hidden;
   position: relative;
